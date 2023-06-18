@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo-uni.svg" type="image/x-icon">
+  <title>Student Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <style>
+    body {
+      background-color: rgb(235, 234, 234);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    #header {
+      text-align: center;
+      background-color: rgb(70, 70, 255);
+      padding: 20px;
+    }
+    #header img {
+      height: 100px;
+    }
+    #registration-form {
+      background-color: rgb(115, 115, 255);
+      color: white;
+      padding: 30px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+    input[type="submit"] {
+      background-color: white;
+      color: blue;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <img src="logo-uni.svg" alt="University Logo">
+    <h4>University of Engineering and Technology</h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3 ">
+        <div id="registration-form">
+          <center><h4>Student Registration</h4></center>
+          <form>
+            <div class="mb-3">
+              <label for="student-name" class="form-label">Student Name</label>
+              <input type="text" id="student-name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="father-name" class="form-label">Father Name</label>
+              <input type="text" id="father-name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="cnic" class="form-label">CNIC</label>
+              <input type="text" id="cnic" class="form-control" maxlength="13" required>
+            </div>
+            <div class="mb-3">
+              <label for="contact-number" class="form-label">Contact Number</label>
+              <input type="text" id="contact-number" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="fsc-marks" class="form-label">FSC Marks</label>
+              <input type="number" id="fsc-marks" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="entry-test-marks" class="form-label">Entry Test Marks</label>
+              <input type="number" id="entry-test-marks" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="gender" class="form-label">Gender</label>
+              <select id="gender" class="form-select" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="student-remarks" class="form-label">Student Remarks</label>
+              <textarea id="student-remarks" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="student-preferences" class="form-label">Student Preferences</label>
+              <select id="student-preferences" class="form-select" required>
+                <option value="BSCS">BSCS</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="IME">IME</option>
+              </select>
+            </div>
+            <div class="text-center">
+              <input type="submit" value="Submit" class="btn btn-primary">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+  integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+  crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
